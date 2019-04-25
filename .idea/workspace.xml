@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/../Playground/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -301,12 +301,12 @@
       <updated>1554455583200</updated>
       <workItem from="1554455591019" duration="98000" />
       <workItem from="1555897254894" duration="6637000" />
-      <workItem from="1556174842540" duration="1996000" />
+      <workItem from="1556174842540" duration="2523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8731000" />
+    <option name="totallyTimeSpent" value="9258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1143" y="23" width="1400" height="1259" extended-state="0" />
@@ -369,7 +369,7 @@
     <entry file="file://$PROJECT_DIR$/../Playground/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

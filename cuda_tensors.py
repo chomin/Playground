@@ -1,8 +1,13 @@
 # let us run this cell only if CUDA is available
 # We will use ``torch.device`` objects to move tensors in and out of GPU
 import torch
+import os
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 x: torch.Tensor = torch.rand(5, 3)
+
+print(torch.cuda.current_device())
+print(torch.cuda.current_stream())
 
 if torch.cuda.is_available():
     device = torch.device("cuda")          # a CUDA device object

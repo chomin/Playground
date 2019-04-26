@@ -35,8 +35,8 @@ z = x.view(-1, 8)  # the size -1 is inferred from other dimensions
 a = np.ones(5)
 b = torch.from_numpy(a)
 np.add(a, 1, out=a)
-print(a)
-print(b)
-print(b.numpy())
+# print(a)
+# print(b)
+# print(b.numpy())
 
 # 

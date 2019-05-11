@@ -26,3 +26,4 @@ print(x.grad)
 # . Therefore, ∂o/∂xi = 3/2(xi+2)
 # , hence ∂o/∂xi∣∣xi=1 = 9/2 = 4.5
 # .
+

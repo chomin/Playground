@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn   #
 import torch.nn.functional as F
+import torch.optim as optim
 
 
 class Net(nn.Module):
@@ -81,3 +82,26 @@ loss = criterion(output, target)
 
 # --------- back prop ----------
 
+# need to clear the existing gradients though, else gradients will be accumulated to existing gradients.
+net.zero_grad()     # zeroes the gradient buffers of all parameters.
+
+print('conv1.bias.grad before backward')
+print(net.conv1.bias.grad)
+
+loss.backward()
+
+print('conv1.bias.grad after backward')
+print(net.conv1.bias.grad)
+
+
+# ---------- Update the weights ----------
+
+# create your optimizer
+optimizer = optim.SGD(net.parameters(), lr=0.01)
+
+# in your training loop:
+optimizer.zero_grad()   # zero the gradient buffers
+output = net(input)
+loss = criterion(output, target)
+loss.backward()
+optimizer.step()    # Does the update

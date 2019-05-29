@@ -10,6 +10,7 @@ import numpy as np
 # print("test")
 x = torch.empty(5, 3)
 # print(type(x))
+
 # print(x)
 x: torch.Tensor = torch.randn_like(x, dtype=torch.float)  # override dtype!
 # print(x)  # result has the same size

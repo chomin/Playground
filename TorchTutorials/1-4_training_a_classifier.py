@@ -5,52 +5,66 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import torch
-import torchvision
-import torchvision.transforms as transforms
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
+# torchvision, that has data loaders for common datasets such as Imagenet, CIFAR10, MNIST, etc.
+# and data transformers for images, viz., torchvision.datasets and torch.utils.data.DataLoader.
+import torchvision
+import torchvision.transforms as transforms
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+# 1. Loading and normalizing CIFAR10
+
+# The output of torchvision datasets are PILImage images of range [0, 1].
+# We transform them to Tensors of normalized range [-1, 1].
 transform = transforms.Compose(
     [transforms.ToTensor(),
      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
-trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
+train_set = torchvision.datasets.CIFAR10(root="./data", train=True,
+                                         download=True, transform=transform)
+train_loader = torch.utils.data.DataLoader(train_set, batch_size=4,
+                                           shuffle=True, num_workers=2)
+
+test_set = torchvision.datasets.CIFAR10(root="./data", train=False,
                                         download=True, transform=transform)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
-                                          shuffle=True, num_workers=2)
+test_loader = torch.utils.data.DataLoader(test_set, batch_size=4,
+                                          shuffle=False, num_workers=2)
 
-testset = torchvision.datasets.CIFAR10(root='./data', train=False,
-                                       download=True, transform=transform)
-testloader = torch.utils.data.DataLoader(testset, batch_size=4,
-                                         shuffle=False, num_workers=2)
-
-classes = ('plane', 'car', 'bird', 'cat',
-           'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+classes = ("plane", "car", "bird", "cat",
+           "deer", "dog", "frog", "horse", "ship", "truck")
 
 # functions to show an image
 
 
 def imshow(img):
+    """
+
+    :type img: torch.Tensor
+    """
     img = img / 2 + 0.5     # unnormalize
-    npimg = img.numpy()
-    plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    np_img = img.numpy()
+    plt.imshow(np.transpose(np_img, (1, 2, 0)))
     plt.show()
 
 
 # get some random training images
-dataiter = iter(trainloader)
-images, labels = dataiter.next()
+data_iter = iter(train_loader)
+images, labels = data_iter.__next__()
 
 # show images
 imshow(torchvision.utils.make_grid(images))
 # print labels
-print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
+print(" ".join("%5s" % classes[labels[j]] for j in range(4)))
 
 
+# 2. Define a Convolutional Neural Network
+
+# Copy the neural network from the Neural Networks section before and modify it to take 3-channel images
+# (instead of 1-channel images as it was defined).
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -72,22 +86,32 @@ class Net(nn.Module):
 
 
 net = Net()
+if torch.cuda.is_available():
+    net.cuda()
 
+# 3. Define a Loss function and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
+
+# 4. Train the network
+# for 2 passes over the training dataset.
 for epoch in range(2):  # loop over the dataset multiple times
 
     running_loss = 0.0
-    for i, data in enumerate(trainloader, 0):
+    for i, data in enumerate(train_loader, 0):
         # get the inputs
-        inputs, labels = data
+        if torch.cuda.is_available():
+            inputs, labels = data.cuda()
+        else:
+            inputs, labels = data
 
         # zero the parameter gradients
         optimizer.zero_grad()
 
         # forward + backward + optimize
         outputs = net(inputs)
+
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
@@ -95,42 +119,51 @@ for epoch in range(2):  # loop over the dataset multiple times
         # print statistics
         running_loss += loss.item()
         if i % 2000 == 1999:    # print every 2000 mini-batches
-            print('[%d, %5d] loss: %.3f' %
+            print("[%d, %5d] loss: %.3f" %
                   (epoch + 1, i + 1, running_loss / 2000))
             running_loss = 0.0
 
-print('Finished Training')
+print("Finished Training")
 
-dataiter = iter(testloader)
-images, labels = dataiter.next()
+
+# 5. Test the network on the test data
+data_iter = iter(test_loader)
+
+if torch.cuda.is_available():
+    images, labels = data_iter.__next__().cuda()
+else:
+    images, labels = data_iter.__next__()
 
 # print images
 imshow(torchvision.utils.make_grid(images))
-print('GroundTruth: ', ' '.join('%5s' % classes[labels[j]] for j in range(4)))
+print("GroundTruth: ", " ".join("%5s" % classes[labels[j]] for j in range(4)))
 
 outputs = net(images)
-_, predicted = torch.max(outputs, 1)
+a, predicted = torch.max(outputs, 1)
+print(a)
+print(predicted)
 
-print('Predicted: ', ' '.join('%5s' % classes[predicted[j]]
+print("Predicted: ", " ".join("%5s" % classes[predicted[j]]
                               for j in range(4)))
 
 correct = 0
 total = 0
 with torch.no_grad():
-    for data in testloader:
+    for data in test_loader:
         images, labels = data
         outputs = net(images)
         _, predicted = torch.max(outputs.data, 1)
         total += labels.size(0)
+
         correct += (predicted == labels).sum().item()
 
-print('Accuracy of the network on the 10000 test images: %d %%' % (
+print("Accuracy of the network on the 10000 test images: %d %%" % (
     100 * correct / total))
 
 class_correct = list(0. for i in range(10))
 class_total = list(0. for i in range(10))
 with torch.no_grad():
-    for data in testloader:
+    for data in test_loader:
         images, labels = data
         outputs = net(images)
         _, predicted = torch.max(outputs, 1)
@@ -142,5 +175,5 @@ with torch.no_grad():
 
 
 for i in range(10):
-    print('Accuracy of %5s : %2d %%' % (
+    print("Accuracy of %5s : %2d %%" % (
         classes[i], 100 * class_correct[i] / class_total[i]))

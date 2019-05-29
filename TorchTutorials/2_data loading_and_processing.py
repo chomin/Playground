@@ -1,18 +1,19 @@
 from __future__ import print_function, division
 import os
 import torch
-import pandas as pd
-from skimage import io, transform
+import pandas as pd                 # For easier csv parsing
+from skimage import io, transform   # For image io and transforms
 import numpy as np
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, utils
-
-# Ignore warnings
 import warnings
-warnings.filterwarnings("ignore")
+
+warnings.filterwarnings("ignore")  # Ignore warnings
 
 plt.ion()   # interactive mode
+
+# The dataset we are going to deal with is that of facial pose. This means that a face is annotated.
 
 landmarks_frame = pd.read_csv('./data/faces/face_landmarks.csv')
 
@@ -25,6 +26,7 @@ landmarks = landmarks.astype('float').reshape(-1, 2)
 # print('Landmarks shape: {}'.format(landmarks.shape))
 # print('First 4 Landmarks: {}'.format(landmarks[:4]))
 
+
 def show_landmarks(image, landmarks):
     """Show image with landmarks"""
     plt.imshow(image)
@@ -35,6 +37,7 @@ def show_landmarks(image, landmarks):
 # show_landmarks(io.imread(os.path.join('data/faces/', img_name)),
 #                landmarks)
 # plt.show()
+
 
 class FaceLandmarksDataset(Dataset):
     """Face Landmarks dataset."""
@@ -169,6 +172,7 @@ class ToTensor(object):
         image = image.transpose((2, 0, 1))
         return {'image': torch.from_numpy(image),
                 'landmarks': torch.from_numpy(landmarks)}
+
 
 scale = Rescale(256)
 crop = RandomCrop(128)

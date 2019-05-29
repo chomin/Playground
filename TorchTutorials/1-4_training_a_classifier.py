@@ -15,6 +15,10 @@ import torchvision
 import torchvision.transforms as transforms
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+seed = 1
+torch.manual_seed(seed)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed(seed)
 
 # 1. Loading and normalizing CIFAR10
 

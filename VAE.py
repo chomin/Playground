@@ -109,6 +109,8 @@ def train(epoch):
     train_loss = 0
     for batch_idx, (data, _) in enumerate(train_loader):
         if cuda:
+            # if batch_idx == 0:
+            #     print(type(data))  #  Variable(data.cuda(), volatile=True)
             data = Variable(data.cuda())
         else:
             data = Variable(data)

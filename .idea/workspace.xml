@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e648e7-e012-4e91-aca8-f96f9a0cff08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TorchTutorials/.ipynb_checkpoints/1-4_image_a_classifier-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TorchTutorials/.ipynb_checkpoints/2_data_loading_and_processing-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb">
+          <provider selected="true" editor-type-id="jupyter-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+            <state relative-caret-position="1554">
+              <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
               <folding>
                 <element signature="e#70#79#0" expanded="true" />
               </folding>
@@ -26,31 +34,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VAE.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1442">
-              <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
+          <provider selected="true" editor-type-id="jupyter-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="42">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
+        <entry file="file://$PROJECT_DIR$/VAE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -95,17 +96,17 @@
         <option value="$PROJECT_DIR$/TorchTutorials/1-4_image_a_classifier.ipynb" />
         <option value="$PROJECT_DIR$/TorchTutorials/2_data loading_and_processing.py" />
         <option value="$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb" />
-        <option value="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" />
         <option value="$PROJECT_DIR$/VAE.py" />
+        <option value="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="928" />
-    <option name="y" value="58" />
-    <option name="width" value="1054" />
-    <option name="height" value="1158" />
+    <option name="x" value="801" />
+    <option name="y" value="174" />
+    <option name="width" value="1280" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -124,6 +125,12 @@
               <item name="Playground" type="462c0819:PsiDirectoryNode" />
               <item name="TorchTutorials" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playground" type="462c0819:PsiDirectoryNode" />
+              <item name="TorchTutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -139,7 +146,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.VAE">
+  <component name="RunManager" selected="Python.training_a_classifier">
     <configuration name="1-3_neural_networks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,8 +309,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.VAE" />
         <item itemvalue="Python.training_a_classifier" />
+        <item itemvalue="Python.VAE" />
         <item itemvalue="Python.1-3_neural_networks" />
         <item itemvalue="Python.view_file" />
         <item itemvalue="Python.nvidia_smi" />
@@ -345,10 +352,11 @@
       <workItem from="1558585402460" duration="862000" />
       <workItem from="1558680011722" duration="12013000" />
       <workItem from="1559088953413" duration="5109000" />
-      <workItem from="1559132751489" duration="1090000" />
-      <workItem from="1559184977799" duration="176000" />
-      <workItem from="1559185226543" duration="144000" />
-      <workItem from="1559716853286" duration="774000" />
+      <workItem from="1559132751489" duration="1113000" />
+      <workItem from="1559172100687" duration="433000" />
+      <workItem from="1559187664072" duration="42000" />
+      <workItem from="1559187727449" duration="23000" />
+      <workItem from="1559718363120" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="change folder hierarchy">
       <created>1557552781759</created>
@@ -378,16 +386,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559100260601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rename">
+      <created>1559134161664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559134161664</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56647000" />
+    <option name="totallyTimeSpent" value="56120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="928" y="58" width="1054" height="1158" extended-state="0" />
+    <frame x="801" y="174" width="1280" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33498025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27786753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,11 +415,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32973805" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49762583" visible="true" weight="0.3424015" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49762583" weight="0.17565486" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32819724" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49952516" weight="0.48536208" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49919224" weight="0.32819724" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49919224" visible="true" weight="0.32819724" />
       <window_info anchor="bottom" id="Jupyter" order="14" weight="0.32973805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -426,7 +442,8 @@
     <MESSAGE value="add VAE, nvidia_smi and view_file.py" />
     <MESSAGE value="remove view_file.py" />
     <MESSAGE value="finished 2_data loading and processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished 2_data loading and processing" />
+    <MESSAGE value="rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Playground$training_a_classifier.coverage" NAME="training_a_classifier Coverage Results" MODIFIED="1558707720732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TorchTutorials" />
@@ -490,6 +507,16 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/view_file.py" />
+    <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TorchTutorials/1-2_autograd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -531,50 +558,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-1527353736/builtins.py" />
     <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        <state relative-caret-position="1554">
+          <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
           <folding>
             <element signature="e#70#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VAE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1442">
-          <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/3_learning_pytorch_with_examples.ipynb">
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
+    <entry file="file://$PROJECT_DIR$/VAE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="322">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Playground.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="42">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

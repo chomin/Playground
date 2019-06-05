@@ -103,12 +103,13 @@ optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 for epoch in range(2):  # loop over the dataset multiple times
 
     running_loss = 0.0
-    for i, data in enumerate(train_loader, 0):
+    # for i, data in enumerate(train_loader, 0):
+    for i, (data, _) in enumerate(train_loader):
+
         # get the inputs
+        inputs, labels = data
         if torch.cuda.is_available():
-            inputs, labels = data.cuda()
-        else:
-            inputs, labels = data
+            inputs = inputs.cuda()
 
         # zero the parameter gradients
         optimizer.zero_grad()

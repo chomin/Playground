@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e648e7-e012-4e91-aca8-f96f9a0cff08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/error_effect_on_linear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Playground.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_newton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TorchTutorials/.ipynb_checkpoints/3_learning_pytorch_with_examples-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TorchTutorials/.ipynb_checkpoints/3_learning_pytorch_with_examples-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TorchTutorials/3_learning_pytorch_with_examples.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TorchTutorials/3_learning_pytorch_with_examples.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,16 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb">
-          <provider selected="true" editor-type-id="jupyter-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
+            <state relative-caret-position="260">
+              <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
               <folding>
                 <element signature="e#70#79#0" expanded="true" />
               </folding>
@@ -34,47 +33,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
-          <provider selected="true" editor-type-id="jupyter-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multi_newton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="238">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding>
-                <element signature="e#76#94#0" expanded="true" />
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/error_effect_on_linear.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="70">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VAE.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TorchTutorials/3_learning_pytorch_with_examples.ipynb">
+          <provider selected="true" editor-type-id="jupyter-editor" />
         </entry>
       </file>
     </leaf>
@@ -93,6 +77,9 @@
       <find>&quot;&quot;</find>
       <find>show</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,16 +105,16 @@
         <option value="$PROJECT_DIR$/TorchTutorials/2_data loading_and_processing.py" />
         <option value="$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb" />
         <option value="$PROJECT_DIR$/VAE.py" />
-        <option value="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/error_effect_on_linear.py" />
+        <option value="$PROJECT_DIR$/TorchTutorials/temp2.py" />
+        <option value="$PROJECT_DIR$/temp2.py" />
+        <option value="$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="126" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1133" />
+    <option name="width" value="1280" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectView">
@@ -141,6 +128,11 @@
             <path>
               <item name="Playground" type="b2602c69:ProjectViewProjectNode" />
               <item name="Playground" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playground" type="462c0819:PsiDirectoryNode" />
+              <item name="TorchTutorials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -161,9 +153,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/TorchTutorials" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -178,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.error_effect_on_linear">
+  <component name="RunManager" selected="Python.training_a_classifier">
     <configuration name="1-3_neural_networks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,17 +237,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="error_effect_on_linear" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="temp2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/error_effect_on_linear.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,12 +308,12 @@
       <item itemvalue="Python.VAE" />
       <item itemvalue="Python.training_a_classifier" />
       <item itemvalue="Python.view_file" />
-      <item itemvalue="Python.error_effect_on_linear" />
+      <item itemvalue="Python.temp2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.error_effect_on_linear" />
         <item itemvalue="Python.training_a_classifier" />
+        <item itemvalue="Python.temp2" />
         <item itemvalue="Python.VAE" />
         <item itemvalue="Python.1-3_neural_networks" />
         <item itemvalue="Python.view_file" />
@@ -363,8 +358,9 @@
       <workItem from="1559132751489" duration="1113000" />
       <workItem from="1559172100687" duration="433000" />
       <workItem from="1559187664072" duration="42000" />
-      <workItem from="1559187727449" duration="77000" />
-      <workItem from="1559641165801" duration="800000" />
+      <workItem from="1559187727449" duration="23000" />
+      <workItem from="1559718363120" duration="4201000" />
+      <workItem from="1559741420933" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="change folder hierarchy">
       <created>1557552781759</created>
@@ -405,33 +401,33 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56928000" />
+    <option name="totallyTimeSpent" value="60297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="126" y="23" width="1133" height="741" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31530705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32973805" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" weight="0.32973805" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919224" weight="0.3990755" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919224" weight="0.3985025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32973805" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49762583" weight="0.17565486" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49762583" weight="0.40349418" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32819724" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49952516" visible="true" weight="0.48536208" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49952516" visible="true" weight="0.48382127" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49919224" weight="0.32819724" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49919224" weight="0.327787" />
       <window_info anchor="bottom" id="Jupyter" order="14" weight="0.32973805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49939975" weight="0.29972503" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49939975" visible="true" weight="0.30048466" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" x="0" y="0" width="300" height="1059" id="Documentation" order="5" sideWeight="0.5006002" side_tool="true" weight="0.2907916" />
     </layout>
@@ -454,10 +450,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Playground$view_file.coverage" NAME="view_file Coverage Results" MODIFIED="1558066011166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Playground$VAE.coverage" NAME="VAE Coverage Results" MODIFIED="1558394107440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Playground$training_a_classifier.coverage" NAME="training_a_classifier Coverage Results" MODIFIED="1558707720732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TorchTutorials" />
+    <SUITE FILE_PATH="coverage/Playground$VAE.coverage" NAME="VAE Coverage Results" MODIFIED="1558394107440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$Main.coverage" NAME="study_torch Coverage Results" MODIFIED="1555918718943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Playground$study_torch.coverage" NAME="study_torch Coverage Results" MODIFIED="1557548018399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Playground$temp2.coverage" NAME="temp2 Coverage Results" MODIFIED="1559720328229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Playground$2_autograd.coverage" NAME="2.autograd Coverage Results" MODIFIED="1557548480038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TorchTutorials" />
   </component>
   <component name="editorHistoryManager">
@@ -504,16 +501,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/view_file.py" />
-    <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TorchTutorials/1-2_autograd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -521,20 +508,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="2642" column="4" selection-start-line="2642" selection-start-column="4" selection-end-line="2642" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/torch/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="1220" column="4" selection-start-line="1220" selection-start-column="4" selection-end-line="1220" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/pyplot.py" />
+    <entry file="file:///usr/local/lib/python3.7/site-packages/torch/__init__.pyi" />
     <entry file="file://$PROJECT_DIR$/TorchTutorials/1-1_study_torch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -545,30 +520,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.venv/lib/python3.7/site-packages/torch/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data loading_and_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/torch/utils/data/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2922">
-          <caret line="558" column="61" selection-start-line="558" selection-start-column="61" selection-end-line="558" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.venv/lib/python3.7/site-packages/torch/random.py" />
+    <entry file="file:///usr/local/lib/python3.7/site-packages/torch/utils/data/dataloader.py" />
     <entry file="file://$PROJECT_DIR$/TorchTutorials/1-3_neural_networks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -579,29 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-1527353736/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="2952" column="8" selection-start-line="2952" selection-start-column="8" selection-end-line="2952" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
-          <folding>
-            <element signature="e#70#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-1527353736/builtins.py" />
     <entry file="file://$PROJECT_DIR$/VAE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -611,34 +542,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="42">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multi_newton.py">
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data_loading_and_processing.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/2_data loading_and_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="782">
+          <caret line="72" column="77" lean-forward="true" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
           <folding>
-            <element signature="e#76#94#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.venv/lib/python3.7/site-packages/numpy/random/__init__.py">
+    <entry file="file://$PROJECT_DIR$/temp.py" />
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/1-4_training_a_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="260">
+          <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
+          <folding>
+            <element signature="e#70#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error_effect_on_linear.py">
+    <entry file="file://$PROJECT_DIR$/nvidia_smi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TorchTutorials/3_learning_pytorch_with_examples.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
   </component>
 </project>

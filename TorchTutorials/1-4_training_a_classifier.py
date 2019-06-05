@@ -100,22 +100,22 @@ optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 # 4. Train the network
 # for 2 passes over the training dataset.
-for epoch in range(2):  # loop over the dataset multiple times
+for epoch in range(1):  # loop over the dataset multiple times
 
     running_loss = 0.0
-    # for i, data in enumerate(train_loader, 0):
-    for i, (data, _) in enumerate(train_loader):
+    for i, data in enumerate(train_loader, 0):
 
         # get the inputs
         inputs, labels = data
         if torch.cuda.is_available():
             inputs = inputs.cuda()
+            labels = labels.cuda()
 
         # zero the parameter gradients
         optimizer.zero_grad()
 
         # forward + backward + optimize
-        outputs = net(inputs)
+        outputs = net(inputs).cuda() if torch.cuda.is_available() else net(inputs)
 
         loss = criterion(outputs, labels)
         loss.backward()
@@ -134,16 +134,17 @@ print("Finished Training")
 # 5. Test the network on the test data
 data_iter = iter(test_loader)
 
+images, labels = data_iter.__next__()
 if torch.cuda.is_available():
-    images, labels = data_iter.__next__().cuda()
-else:
-    images, labels = data_iter.__next__()
+    images, labels = images.cuda(), labels.cuda()
 
 # print images
-imshow(torchvision.utils.make_grid(images))
+images.cpu()
+imshow(torchvision.utils.make_grid(images))  # can't convert CUDA tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
 print("GroundTruth: ", " ".join("%5s" % classes[labels[j]] for j in range(4)))
 
-outputs = net(images)
+images.cuda()
+outputs = net(images).cuda()
 a, predicted = torch.max(outputs, 1)
 print(a)
 print(predicted)

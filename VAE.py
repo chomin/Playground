@@ -91,6 +91,7 @@ if cuda:
     model.cuda()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
+
 def loss_function(recon_x, x, mu, logvar):
     # size_average=Falseなのでバッチ内のサンプルの合計lossを求める
     # reconstruction loss 入力画像をどのくらい正確に復元できたか？
@@ -103,8 +104,9 @@ def loss_function(recon_x, x, mu, logvar):
 
     return recon + kld
 
+
 # train and test
-def train(epoch):
+def train(epoch: int):
     model.train()
     train_loss = 0
     for batch_idx, (data, _) in enumerate(train_loader):

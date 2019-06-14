@@ -46,6 +46,8 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def imshow(inp, title=None):
     """Imshow for Tensor."""
+
+    print("call imshow")
     inp = inp.numpy().transpose((1, 2, 0))
     mean = np.array([0.485, 0.456, 0.406])
     std = np.array([0.229, 0.224, 0.225])
@@ -65,8 +67,11 @@ out = torchvision.utils.make_grid(inputs)
 
 imshow(out, title=[class_names[x] for x in classes])
 
+
 def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
     since = time.time()
+
+    print("start training")
 
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0

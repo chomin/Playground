@@ -21,9 +21,9 @@ out_dir = './vae_2'  # 出力先のディレクトリを vae_2 としている�
 cuda = torch.cuda.is_available()
 if cuda:
     print('cuda is available!')
+    if not os.path.exists(out_dir):
+        os.mkdir(out_dir)
 
-if not os.path.exists(out_dir):
-    os.mkdir(out_dir)
 
 torch.manual_seed(seed)
 if cuda:

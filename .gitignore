@@ -1,0 +1,3 @@
+# there are also ignoring files in .gitignore_global
+.idea/Playground.iml
+.idea/misc.xml

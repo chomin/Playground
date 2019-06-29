@@ -61,7 +61,7 @@ def _main():
 
     plt.plot(epochs, errors)
     plt.tight_layout()
-    plt.savefig('error_mult.png')
+    plt.savefig('./data/error_mult.png')
 
 
 if __name__ == "__main__":

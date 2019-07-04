@@ -13,6 +13,8 @@ jupyter = "*"
 ipykernel = "*"
 pyro-ppl = "*"
 seaborn = "*"
+tb = "*"
+future = "*"
 
 [requires]
 python_version = "3.7"

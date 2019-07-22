@@ -5,8 +5,7 @@
       <paths name="yeager">
         <serverdata>
           <mappings>
-            <mapping deploy="/PycharmProject/Playground2" local="$PROJECT_DIR$" web="/" />
-            <mapping local="" />
+            <mapping deploy="/home/k.nakai/PycharmProject/Playground2" local="$PROJECT_DIR$" web="" />
           </mappings>
         </serverdata>
       </paths>

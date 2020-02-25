@@ -20,6 +20,7 @@ requests = "*"
 tensorflow = "*"
 tqdm = "*"
 sklearn = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.7"
